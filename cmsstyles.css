@@ -1,0 +1,185 @@
+body {
+	/*font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;*/
+	font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #FFF;
+	background-image: url(proback3.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+	color: #999;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img {
+	border: none;
+}
+
+a:link {
+	color:#333; 
+	text-decoration: none; 
+}
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+	color: #666;
+}
+
+.container {
+	width: 80%;
+	max-width: 1366px;
+	min-width: 768px;
+	margin: 0 auto; 
+	color: #000;
+}
+
+.header {
+	width: 95%;
+	margin-left:auto;
+	margin-right:auto;
+	color: #000;
+	text-align: center;
+}
+
+.sidebar1 {
+	float: left;
+	width: 19%;
+	padding: 10px 0;
+	color: #000;
+	background-image:url(whitetrans2.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.content {
+	padding: 10px 0;
+	margin: 0px 15px;
+	width: 56%;
+	float: left;
+	color: #000;
+	background-image:url(whitetrans2.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.sidebar2 {
+	float: left;
+	width: 19%;
+	padding: 10px 0;
+	color: #000;
+	background-image:url(whitetrans2.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.sidebar3 {
+	margin: 15px 0;
+	float: left;
+	width: 19%;
+	padding: 10px 0;
+	color: #000;
+	background-image:url(whitetrans2.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.sidebar4 {
+	margin: 15px 0;
+	float: left;
+	width: 19%;
+	padding: 10px 0;
+	min-width: 175px; /*Just Testing This out... On 4:3 screens Ads seem to be larger than the panel. This *SHOULD* fix it, but could cause placement issues.*/
+	color: #000;
+	background-image:url(whitetrans2.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; 
+	color: #000;
+}
+
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666; 
+	margin-bottom: 15px; 
+	color: #000;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+	color: #000;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	text-decoration: none;
+	color: #333;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	color: #666;
+}
+
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+	color: #000;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+	color: #000;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+	color: #000;
+}
+.footer {
+	padding: 10px 0;
+	position: relative;
+	clear: both;
+	color: #000;
+}
+.copy {
+	font-size: 12px;
+	text-align: center;
+}
+.ad {
+	margin-left:auto;
+	margin-right:auto;
+	width:78%;
+}
+.form {
+	margin-left:auto;
+	margin-right:auto;
+	width:93%;
+}
+.small {
+	font-size: 12px;
+}
+.smallinfo {
+	display:inline;
+	 font-size:12px;
+	font-weight:100;
+}

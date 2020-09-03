@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>portalcms2</Name>
+    <ProjectGuid>43bc3cdf-9892-42a6-a920-26e19fb3db6b</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>portalcms2</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>portalcms2</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="home.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="program.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\adapters\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor.asp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor.pack">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor_basic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor_basic_source.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\ckeditor_source.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\contents.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\edit.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\images\spacer.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\images\Thumbs.db">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\af.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\bg.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\bn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\bs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ca.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\cs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\cy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\da.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\de.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\el.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\en-au.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\en-ca.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\en-gb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\en.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\eo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\es.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\et.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\eu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\fa.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\fi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\fo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\fr-ca.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\fr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\gl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\gu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\he.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\hi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\hr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\hu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\is.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\it.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ja.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\km.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ko.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\lt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\lv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\mn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ms.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\nb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\nl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\no.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\pl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\pt-br.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\pt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ro.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\ru.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\sk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\sl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\sr-latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\sr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\sv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\th.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\tr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\uk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\vi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\zh-cn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\zh.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\_languages.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\lang\_translationstatus.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\a11yhelp\dialogs\a11yhelp.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\a11yhelp\lang\en.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\a11yhelp\lang\he.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\about\dialogs\about.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\about\dialogs\logo_ckeditor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\autogrow\plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\clipboard\dialogs\paste.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\colordialog\dialogs\colordialog.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\dialog\dialogDefinition.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\div\dialogs\div.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\find\dialogs\find.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\flash\dialogs\flash.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\flash\images\placeholder.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\button.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\checkbox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\form.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\hiddenfield.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\radio.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\select.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\textarea.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\dialogs\textfield.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\forms\images\hiddenfield.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\iframedialog\plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\image\dialogs\image.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\link\dialogs\anchor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\link\dialogs\link.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\link\images\anchor.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\liststyle\dialogs\liststyle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\pagebreak\images\pagebreak.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\pastefromword\filter\default.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\pastetext\dialogs\pastetext.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\scayt\dialogs\options.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\scayt\dialogs\toolbar.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_address.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_blockquote.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_div.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h5.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_h6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_p.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\showblocks\images\block_pre.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\dialogs\smiley.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\angel_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\angry_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\broken_heart.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\confused_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\cry_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\devil_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\embaressed_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\envelope.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\heart.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\kiss.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\lightbulb.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\omg_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\regular_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\sad_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\shades_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\teeth_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\thumbs_down.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\thumbs_up.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\tounge_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\whatchutalkingabout_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\smiley\images\wink_smile.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\specialchar\dialogs\specialchar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\styles\styles\default.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\tableresize\plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\tabletools\dialogs\tableCell.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\table\dialogs\table.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\templates\dialogs\templates.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\templates\templates\default.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\templates\templates\images\template1.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\templates\templates\images\template2.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\templates\templates\images\template3.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\dialogs\uicolor.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\lang\en.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\lang\he.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\plugin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\uicolor.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\assets\hue_bg.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\assets\hue_thumb.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\assets\picker_mask.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\assets\picker_thumb.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\assets\yui.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\uicolor\yui\yui.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\wsc\dialogs\ciframe.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\wsc\dialogs\tmpFrameset.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\wsc\dialogs\wsc.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\plugins\wsc\dialogs\wsc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\sample.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\sample.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\editor.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\icons_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\dialog_sides.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\dialog_sides.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\dialog_sides_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\mini.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\noimage.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\sprites.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\sprites_ie6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\images\toolbar_start.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\skin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\kama\templates.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\editor.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\icons_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\dialog_sides.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\dialog_sides.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\dialog_sides_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\mini.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\noimage.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\sprites.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\images\sprites_ie6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\skin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\office2003\templates.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\dialog.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\editor.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\icons.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\icons_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\dialog_sides.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\dialog_sides.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\dialog_sides_rtl.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\mini.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\noimage.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\sprites.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\sprites_ie6.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\images\toolbar_start.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\skin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\skins\v2\templates.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\edit\themes\default\theme.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\js\jquery\jquery-1.9.1-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="thirdparty\js\jquery\jquery-1.9.1.min.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class.database.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="operations.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sessions.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="thirdparty\edit\ckeditor_php5.php">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="worker.php">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="classes" />
+    <Folder Include="site-img" />
+    <Folder Include="thirdparty" />
+    <Folder Include="thirdparty\edit" />
+    <Folder Include="thirdparty\edit\adapters" />
+    <Folder Include="thirdparty\edit\images" />
+    <Folder Include="thirdparty\edit\lang" />
+    <Folder Include="thirdparty\edit\plugins" />
+    <Folder Include="thirdparty\edit\plugins\a11yhelp" />
+    <Folder Include="thirdparty\edit\plugins\a11yhelp\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\a11yhelp\lang" />
+    <Folder Include="thirdparty\edit\plugins\about" />
+    <Folder Include="thirdparty\edit\plugins\about\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\autogrow" />
+    <Folder Include="thirdparty\edit\plugins\clipboard" />
+    <Folder Include="thirdparty\edit\plugins\clipboard\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\colordialog" />
+    <Folder Include="thirdparty\edit\plugins\colordialog\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\dialog" />
+    <Folder Include="thirdparty\edit\plugins\div" />
+    <Folder Include="thirdparty\edit\plugins\div\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\find" />
+    <Folder Include="thirdparty\edit\plugins\find\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\flash" />
+    <Folder Include="thirdparty\edit\plugins\flash\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\flash\images" />
+    <Folder Include="thirdparty\edit\plugins\forms" />
+    <Folder Include="thirdparty\edit\plugins\forms\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\forms\images" />
+    <Folder Include="thirdparty\edit\plugins\iframedialog" />
+    <Folder Include="thirdparty\edit\plugins\image" />
+    <Folder Include="thirdparty\edit\plugins\image\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\link" />
+    <Folder Include="thirdparty\edit\plugins\link\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\link\images" />
+    <Folder Include="thirdparty\edit\plugins\liststyle" />
+    <Folder Include="thirdparty\edit\plugins\liststyle\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\pagebreak" />
+    <Folder Include="thirdparty\edit\plugins\pagebreak\images" />
+    <Folder Include="thirdparty\edit\plugins\pastefromword" />
+    <Folder Include="thirdparty\edit\plugins\pastefromword\filter" />
+    <Folder Include="thirdparty\edit\plugins\pastetext" />
+    <Folder Include="thirdparty\edit\plugins\pastetext\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\scayt" />
+    <Folder Include="thirdparty\edit\plugins\scayt\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\showblocks" />
+    <Folder Include="thirdparty\edit\plugins\showblocks\images" />
+    <Folder Include="thirdparty\edit\plugins\smiley" />
+    <Folder Include="thirdparty\edit\plugins\smiley\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\smiley\images" />
+    <Folder Include="thirdparty\edit\plugins\specialchar" />
+    <Folder Include="thirdparty\edit\plugins\specialchar\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\styles" />
+    <Folder Include="thirdparty\edit\plugins\styles\styles" />
+    <Folder Include="thirdparty\edit\plugins\table" />
+    <Folder Include="thirdparty\edit\plugins\tableresize" />
+    <Folder Include="thirdparty\edit\plugins\tabletools" />
+    <Folder Include="thirdparty\edit\plugins\tabletools\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\table\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\templates" />
+    <Folder Include="thirdparty\edit\plugins\templates\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\templates\templates" />
+    <Folder Include="thirdparty\edit\plugins\templates\templates\images" />
+    <Folder Include="thirdparty\edit\plugins\uicolor" />
+    <Folder Include="thirdparty\edit\plugins\uicolor\dialogs" />
+    <Folder Include="thirdparty\edit\plugins\uicolor\lang" />
+    <Folder Include="thirdparty\edit\plugins\uicolor\yui" />
+    <Folder Include="thirdparty\edit\plugins\uicolor\yui\assets" />
+    <Folder Include="thirdparty\edit\plugins\wsc" />
+    <Folder Include="thirdparty\edit\plugins\wsc\dialogs" />
+    <Folder Include="thirdparty\edit\skins" />
+    <Folder Include="thirdparty\edit\skins\kama" />
+    <Folder Include="thirdparty\edit\skins\kama\images" />
+    <Folder Include="thirdparty\edit\skins\office2003" />
+    <Folder Include="thirdparty\edit\skins\office2003\images" />
+    <Folder Include="thirdparty\edit\skins\v2" />
+    <Folder Include="thirdparty\edit\skins\v2\images" />
+    <Folder Include="thirdparty\edit\themes" />
+    <Folder Include="thirdparty\edit\themes\default" />
+    <Folder Include="thirdparty\js" />
+    <Folder Include="thirdparty\js\jquery" />
+  </ItemGroup>
+</Project>
